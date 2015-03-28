@@ -6,11 +6,11 @@
     <title>Services</title>
 </head>
 <body>
-    <div id="header"></div>
+    <%include header.ejs%>
     <div class="row">
         <ul class="breadcrumbs">
-            <li><a href="home.html">Home</a></li>
-            <li class="current"><a href="services.html">Service</a></li>
+            <li><a href="/">Home</a></li>
+            <li class="current"><a href="services">Service</a></li>
         </ul>
     </div>
 
@@ -18,14 +18,11 @@
     <div class="row"><h4>Project Management</h4></div>
     <div class="row"><h4>Web Development</h4></div>
     <div class="row"><h4>Web Designing</h4></div>
-    <!-- JavaScript Section -->
-    <script>
-        $(function () {
-            $("#header").load("header.html");
-            $("#footer").load("footer.html");
-        });
-
-    </script>
-    <div id="footer"></div>
+     <%include footer.ejs%>
+		<script src="Scripts/lib/jquery.js"></script>
+     <script src="Scripts/lib/foundation.min.js"></script>
+     <script>$(document).foundation();</script>
+     <script src="Scripts/lib/angular.min.js"></script>
+     <script src="Scripts/app.js" type="text/javascript"></script>
 </body>
 </html>

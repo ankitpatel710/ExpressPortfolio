@@ -6,10 +6,10 @@
     <title>Projects</title>
 </head>
 <body>
-    <div id="header"></div>
+    <%include header.ejs%>
     <div class="row">
         <ul class="breadcrumbs">
-            <li><a href="home">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li class="current"><a href="projects">Projects</a></li>
         </ul>
     </div>
@@ -89,12 +89,11 @@
             </ul>
         </div>
     </div>
-    <div id="footer"></div>
-    <script>
-    $(function () {
-        $("#header").load("header.html");
-        $("#footer").load("footer.html");
-    });
-    </script>
+    <%include footer.ejs%>
+		<script src="Scripts/lib/jquery.js"></script>
+     <script src="Scripts/lib/foundation.min.js"></script>
+     <script>$(document).foundation();</script>
+     <script src="Scripts/lib/angular.min.js"></script>
+     <script src="Scripts/app.js" type="text/javascript"></script>
 </body>
 </html>
